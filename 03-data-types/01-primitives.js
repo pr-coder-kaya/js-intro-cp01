@@ -59,3 +59,6 @@ console.log(typeof 5 > 2); // boolean
 console.log(typeof (typeof 25)); // 'string'
 
 console.log(typeof 'number'); // string
+
+console.log(typeof undefined); // undefined
+console.log(typeof null); // 'object'
