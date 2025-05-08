@@ -1,25 +1,21 @@
-function sum(n1, n2) {
-    return n1 + n2;
-}
+const Car = require('./12-oop/prototypes/Car'); // this is importing Car template
+const Member = require('./12-oop/prototypes/Member');
 
-console.log(sum(1, 2));
+// const bmw = new Car('BMW', 'X6', 2020, 35000);
 
-console.log(sum());
+// console.log(bmw); // Car { make: 'BMW', model: 'X6', year: 2020, price: 35000 }
 
-function modifyArrElements(arr) {
-    return arr.join(', ');
-}
+// bmw.discount(3000);
+// bmw.addTax();
 
-console.log(modifyArrElements(['John', 'Jane', 'Mariia'])); // John, Jane, Mariia
+// console.log(bmw); // Car { make: 'BMW', model: 'X6', year: 2020, price: 35200 }
 
 
-console.log(-10 % 5 === 0)
-console.log(-0 === 0)
+const member = new Member('John Doe', 'johnxxx', 'john1234', true);
 
-console.log(3 % 2); 
-console.log(-3 % 2); 
+console.log(member);
 
-// num % 2 !== 0
+member.resetPassword('Secret123!');
+member.freeze();
 
-if(!'')
-
+console.log(member);
