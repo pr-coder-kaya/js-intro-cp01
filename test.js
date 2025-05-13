@@ -31,17 +31,29 @@
 
 // parseDate();
 
-const HomePage = require('./utils/HomePage');
-const APIHelper = require('./utils/APIHelper');
-const users = require('./utils/Users');
+// const HomePage = require('./utils/HomePage');
+// const APIHelper = require('./utils/APIHelper');
+// const users = require('./utils/Users');
 
-const homePage = new HomePage();
-const loginPage = new LoginPage();
+// const homePage = new HomePage();
+// const loginPage = new LoginPage();
 
-console.log(homePage.logo);
-console.log(homePage.getLogo());
+// console.log(homePage.logo);
+// console.log(homePage.getLogo());
 
-APIHelper.delete();
+// APIHelper.delete();
 
-const { username, password } = users.tg_frontend_user;
-loginPage.login(username, password);
+// const { username, password } = users.tg_frontend_user;
+// loginPage.login(username, password);
+
+
+
+// CommonJS Recap
+// const AppUtils = require('./13-modules/commonjs/AppUtils');
+
+// ES6 Modules
+import { AppUtils } from './13-modules/es6/AppUtils.js';
+
+console.log(AppUtils.getBaseUrl());
+console.log(AppUtils.getValidLoginCredentials().username);
+console.log(AppUtils.getValidLoginCredentials().password);
