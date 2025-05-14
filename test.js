@@ -52,8 +52,18 @@
 // const AppUtils = require('./13-modules/commonjs/AppUtils');
 
 // ES6 Modules
-import { AppUtils } from './13-modules/es6/AppUtils.js';
+import AppUtils from './13-modules/es6/AppUtils.js';
+import { pi, printHi } from './13-modules/es6/AppUtils.js';
 
 console.log(AppUtils.getBaseUrl());
 console.log(AppUtils.getValidLoginCredentials().username);
 console.log(AppUtils.getValidLoginCredentials().password);
+
+console.log('Hello World');
+
+for(let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+console.log(pi);
+printHi();
